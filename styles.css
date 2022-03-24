@@ -29,7 +29,7 @@ img {
 }
 
 .intro-container {
-    background-image: url(/images/League-of-Legends-Bg-Blurred.png);
+    background-image: url(./images/League-of-Legends-Bg-Blurred.png);
     background-color: #404040;
     background-blend-mode: multiply;
     background-size: cover;
