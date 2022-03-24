@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>League Sign Up</title>
 </head>
 <body>
-    <header>
-        <div class="intro-container">
-            <h1 class="head-text">The all-in-one companion for every gamer</h1>
-            <p>Your personal gaming assistant that will help you master League of Legends</p>
-        </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <h3>Master the meta every patch</h3>
-            <h3>Identify and fix your weaknesses</h3>
-            <h3>Get more victories and climb</h3>
-        </div>
-        <div class="form-container">
-            <form action="#">
-                <label for="fname">First Name:</label>
-                <input id="fname" type="text" placeholder="first name" required>
-                <label for="email">Email:</label>
-                <input id="email" type="email" placeholder="email" required>
-            </form>
-        </div>
-        <p class="privacy-text">We'll never share your personal information 
-            without your permission</p>
-    </main>
+    <div class="container flex">
+        <header>
+            <div class="intro-container">
+                <img class="poro-img" src="/images/poro logo.png" alt="poro">
+                <h1>The <span class="bold-text">all-in-one companion</span> for every league player</h1>
+                <p>Your personal gaming assistant that will help you master League of Legends</p>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <img src="/images/tier icon.webp" alt="tier-icon">
+                <h3>Master the meta every patch</h3>
+                <p>We’ve got you covered with expert recommendations personalized for your skill level and playstyle.</p>
+                <img src="/images/weakness-icon.webp" alt="weaknesses-icon">
+                <h3>Identify and fix your weaknesses</h3>
+                <p>We’ll analyze your games to pinpoint the areas that need the most improvement.</p>
+                <img src="/images/victories icon.webp" alt="victories-icon">
+                <h3>Get more victories and climb</h3>
+                <p>Porobuddy users win more and climb faster than non-Porobuddy users. It’s science!</p>
+            </div>
+            <div class="form-container">
+                <h3>Start climbing now!</h3>
+                <form action="#">
+                    <input id="fname" type="text" placeholder="first name" required>
+                    <input id="email" type="email" placeholder="email" required>
+                    <button class="submit-btn">Register</button>
+                </form>
+            </div>
+            <p class="privacy-text">We'll never share your personal information 
+                without your permission</p>
+        </main>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

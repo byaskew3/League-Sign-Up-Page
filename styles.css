@@ -4,4 +4,108 @@
 
 body {
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background: rgb(22, 11, 71);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+    max-width: 175px;
+    margin-top: 1em;
+}
+
+.intro-container {
+    background-image: url(/images/League-of-Legends-Bg-Blurred.png);
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;   
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+.intro-container p {
+    display: inline-block;
+    border-bottom: 3px solid white;
+    border-image: linear-gradient(to right, purple, blue) 1;
+    padding-bottom: .5em;
+    letter-spacing: 1px;
+}
+
+.main-container p {
+    padding: 0 1em;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 3em;
+    /* border: 2px solid red; */
+}
+
+.form-container h3 {
+    border: 1px solid #404040;
+    padding: 1em;
+}
+
+input,
+button {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    padding: .75em 1.5em;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: white;
+    background: linear-gradient(to right, purple, blue);
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.1);
+    background: white;
+    background: linear-gradient(to left, purple, blue);
+}
+
+.privacy-text {
+    font-size: .75rem;
+    color: rgba(255, 255, 255, 0.486);
+}
+
+@media(min-width: 650px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
 }
