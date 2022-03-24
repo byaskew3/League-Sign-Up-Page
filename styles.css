@@ -19,6 +19,7 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 img {
@@ -104,8 +105,53 @@ button:focus {
 }
 
 @media(min-width: 650px) {
+    header,
+    main {
+        width: 50%;
+    }
+
+    p {
+        margin: 0;
+        margin-top: .5em;
+    }
+
     .flex {
         display: flex;
         flex-direction: row;
+    }
+    
+    .intro-container,
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .main-container {
+        font-size: 1.3rem;
+        justify-content: flex-start;
+    }
+    
+    .main-container h3 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    .poro-img {
+        max-width: 300px;
+    }
+
+    .form-container {
+        margin-top: 1.5em;
+    }
+
+    .form-container h3 {
+        margin-bottom: .5em;
     }
 }
